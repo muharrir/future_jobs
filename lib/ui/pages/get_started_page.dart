@@ -76,7 +76,9 @@ class GetStartedPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(66),
                         ),
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/sign-in');
+                          },
                           child: Text(
                             'Sign In',
                             style: whiteTextStyle.copyWith(
